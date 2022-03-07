@@ -1,10 +1,21 @@
 class AzureFunctionsCoreToolsAT4 < Formula
+  funcVersion = "4.0.4385"
+  if OS.linux?
+    funcArch = "linux-x64"
+    funcSha = "3e19ed04954f14e949f63535859c5369c285f7ba6a0cf8ddccc51d45cff1a253"
+  elsif Hardware::CPU.arm?
+    funcArch = "osx-arm64"
+    funcSha = "520a79a29fdb5755f431fcaebf270802438d5dcfe6d9d1d220a6ca3688aac0ab"
+  else
+    funcArch = "osx-x64"
+    funcSha = "57b45e9714a9c921a76ed745021b85283b15361084ca3e2dbc8df08b1a24fe52"
+  end
+
   desc "Azure Functions Core Tools 4.0"
-  homepage "https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#run-azure-functions-core-tools"
-  url "https://functionscdn.azureedge.net/public/4.0.3971/Azure.Functions.Cli.osx-x64.4.0.3971.zip"
-  version "4.0.3971"
-  # make sure sha256 is lowercase.
-  sha256 "9a852a5c5e28ea043e8c141e6e690c8535a4cc1996018ef25d902b1704914fdd"
+  homepage "https://docs.microsoft.com/azure/azure-functions/functions-run-local#run-azure-functions-core-tools"
+  url "https://functionscdn.azureedge.net/public/#{funcVersion}/Azure.Functions.Cli.#{funcArch}.#{funcVersion}.zip"
+  sha256 funcSha
+  version funcVersion
   head "https://github.com/Azure/azure-functions-core-tools"
 
 
