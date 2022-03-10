@@ -2,7 +2,7 @@ class AzureFunctionsCoreToolsAT3 < Formula
   funcVersion = "3.0.3904"
   if OS.linux?
     funcArch = "linux-x64"
-    funcSha = "todo"
+    funcSha = "2fda421ef6761acf9f12ef70735cf241774c8351bd83889366d01ce9ce1605ff"
   else
     funcArch = "osx-x64"
     funcSha = "fc3cc4a4a2d70220fb64bee4bc9b69adbcfb87e80392b5761f7647bf7afea5ab"

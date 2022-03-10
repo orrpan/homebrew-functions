@@ -5,6 +5,7 @@ param (
     $MajorVersion,
 
     [Parameter(Mandatory=$true)]
+    [AllowEmptyString()]
     [string]
     $FileSuffix
 )

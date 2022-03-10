@@ -20,7 +20,7 @@ jobs:
         MajorVersion: '3'
       Mac_v3_legacy:
         ImageType: 'macOS-latest'
-        FileSuffix: 'v3-preview'
+        FileSuffix: '-v3-preview'
         MajorVersion: '3'
       Mac_v2:
         ImageType: 'macOS-latest'
@@ -40,7 +40,7 @@ jobs:
         MajorVersion: '3'
       Linux_v3_legacy:
         ImageType: 'ubuntu-latest'
-        FileSuffix: '@v3-preview'
+        FileSuffix: '-v3-preview'
         MajorVersion: '3'
       Linux_v2:
         ImageType: 'ubuntu-latest'
