@@ -53,5 +53,5 @@ jobs:
   pool:
     vmImage: $(ImageType)
   steps:
-  - pwsh: ./test.ps1 -MajorVersion $(MajorVersion) -FileSuffix $(FileSuffix)
+  - pwsh: ./test.ps1 -MajorVersion "$(MajorVersion)" -FileSuffix "$(FileSuffix)"
     displayName: 'Test brew formula'
