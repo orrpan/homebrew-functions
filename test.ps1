@@ -5,7 +5,6 @@ param (
     $MajorVersion,
 
     [Parameter(Mandatory=$true)]
-    [ValidateNotNullOrEmpty()]
     [string]
     $FileSuffix
 )
